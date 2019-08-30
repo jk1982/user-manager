@@ -1,0 +1,35 @@
+{
+  "name": "user-manager",
+  "version": "1.0.0",
+  "description": "An advanced user manager with statistics",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node .",
+    "dev": "concurrently \"tsc -w\" \"nodemon dist/app.js\"",
+    "prod": "tsc && node ./dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jk1982/user-manager.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jk1982/user-manager/issues"
+  },
+  "homepage": "https://github.com/jk1982/user-manager#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "@types/node": "^12.7.2",
+    "concurrently": "^4.1.2",
+    "nodemon": "^1.19.1",
+    "typescript": "^3.6.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
