@@ -13,5 +13,6 @@ export class UserController extends Controller{
     public Create(){
         let user = this.req.body as UserContract;
         
+        
     }
 }
